@@ -1,3 +1,3 @@
-test slack
+dzdzdztest slack
 test commit notification on slack
 test 3dzdzddzdz
