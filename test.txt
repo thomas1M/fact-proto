@@ -1,3 +1,10 @@
 dzdzdztest slack
 test commit notification on slack
+<<<<<<< HEAD
 test 3dzdzddzdz
+=======
+test 3dzdzd
+test 44
+e
+de
+>>>>>>> 0bde727bd441cc9cfcc56f200dec6ed14f70cf1e
