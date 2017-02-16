@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello world</h1>
+</body>
+<script>
+    //declarations
+    const BASE_URL = "http://localhost:8080/user";
+    const CREATEUSER_URL = "http://localhost:8080/create";
+    const DELETEUSER_URL = "http://localhost:8080/users/delete";
+
+    //action
+
+    // Test GET
+    fetch(BASE_URL + "/fou.khel@cfa-afti.fr", {
+        method: 'GET',
+        data:{
+            "mail" : "haha@gmail.com"
+        }
+    }).then(()=> {
+        console.log('User found');
+    })
+        .catch(()=> {
+            console.log('FAIL');
+        });
+
+    //Test create user
+  /* fetch(CREATEUSER_URL + "/dede@gmail.com/DEDE", {
+        method: 'POST',
+        data:{
+            "aEmail" : "fou.khel@cfa-afti.fr",
+            "aNomUtilisateur" : "Roberte"
+        }
+    }).then(()=> {
+        console.log('User created');
+    })
+        .catch(()=> {
+            console.log('FAIL Creation');
+        });
+*/
+
+   //DELETE WORK
+    //Test delete user
+    fetch(DELETEUSER_URL + "/dede@gmail.com", {
+        method: 'DELETE'
+    }).then(()=> {
+        console.log('User deleted');
+    })
+        .catch(()=> {
+            console.log('FAIL deletion');
+        });
+
+
+
+    //Test create user
+    /*fetch(CREATEUSER_URL + "/dede@gmail.com/DEDE", {
+        method: 'POST',
+        data:{
+            "aEmail" : "fou.khel@cfa-afti.fr",
+            "aNomUtilisateur" : "Roberte"
+        }
+    }).then(()=> {
+        console.log('User created');
+    })
+        .catch(()=> {
+            console.log('FAIL Creation');
+        });*/
+</script>
+</html>
